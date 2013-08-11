@@ -7,10 +7,10 @@ title: Gary Lyn Jekyll Site
         
         {% for post in site.posts %}
         <li class="issue">
-            <div class="number">{{ post.date | date_to_string }}</div>
             <h2 class="title">{{ post.title }}</h2>
+            <div class="date">{{ post.date | date_to_string }}</div>
             <div class="introduction">
-                <p>{{ post.excerpts }}</p>
+                <p>{{ post.excerpt }}</p>
             </div>
         </li>
         {% endfor %}
