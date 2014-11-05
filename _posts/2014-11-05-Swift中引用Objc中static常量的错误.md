@@ -6,7 +6,7 @@ date:   2014-11-05 16:41:31
 在swift代码中引用objc头文件中的static变量时出现错误:
 
 >Undefined symbols for architecture armv7:
->"_FNErrorFieldKey", referenced from:
+>"_xxxx", referenced from:
 
 常量定义形式为
 
