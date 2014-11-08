@@ -6,7 +6,7 @@ category: "default"
 tags: "[]"
 ---
 要解决几个问题
-____
+---
 1. 能够监听音量键按下事件
 2. 不改变原来的音量
 3. 拍照时音量指示层不能出现
@@ -14,7 +14,7 @@ ____
 ###监听音量键按下事件
 第1个问题的很容易搜索到：解决方法是使用notification
 
-```
+```smalltalk
 [[NSNotificationCenter defaultCenter] addObserver:self
                                          selector:@selector(volumeChanged:)
                                              name:@"AVSystemController_SystemVolumeDidChangeNotification"
@@ -33,7 +33,7 @@ ____
 这里有几个要注意的问题是：
 - 似乎当前 `AVAudioSession` 为Active时才能接受到这个通知。这里我没有详细去验证，在我自己的应用里在应用becomeActive时
 
-```
+```smalltalk
 AVAudioSession *session = [AVAudioSession sharedInstance];
 [session setCategory:AVAudioSessionCategoryPlayback
               withOptions:AVAudioSessionCategoryOptionMixWithOthers
@@ -57,7 +57,7 @@ AVAudioSession *session = [AVAudioSession sharedInstance];
 修改音量则要麻烦一些，系统并不提供改变音量的API，但是有一个`MPVolumeView`可以提供界面给用户用来调节音量。通过这个东西可以迂回实现调节音量的功能。
 这里的hack是提供一个看不见的MPVolumeView，得到其中UISlider，通过改变slider的value来改变系统音量。严格意义上说也是属于Private API，存在被Apple拒绝可能性。
 
-```
+```smalltalk
     CGRect frame = CGRectMake(-1000, -1000, 100, 100);
     MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:frame];
     [volumeView sizeToFit];

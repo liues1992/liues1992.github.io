@@ -1,3 +1,21 @@
-name: Your New Jekyll Site
-markdown: redcarpet
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 highlighter: pygments
+markdown: redcarpet
+
+# Setup
+title:            Gary's Blog
+tagline:          The painter
+url:              http://liues1992.github.io
+paginate:         5
+baseurl:          /
+author:
+  name:           Gary Lyn
+  url:            http://www.weibo.com/u/1354300893/
+  email:          liues1992@163.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/liues1992/liues1992.github.io
