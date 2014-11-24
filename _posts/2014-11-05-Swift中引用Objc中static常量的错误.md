@@ -10,14 +10,14 @@ date:   2014-11-05 16:41:31
 
 常量定义形式为
 
-    static NSString *const = @“xxxx"
+    static NSString *const kXXX = @“xxxx"
 
 找了官方的guide也没看到相关的说明,最后找到的方法是:
 
 在.h中改为
 
-    extern NSString *const;
+    extern NSString *const kXXX;
 
 在.m中改为
 
-    NSString *const = @“xxxx”;
+    NSString *const kXXX = @“xxxx”;
