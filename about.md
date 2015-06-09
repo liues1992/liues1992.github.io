@@ -4,3 +4,5 @@ title: About
 ---
 
 Gary Lyn
+
+semi-liberalism
