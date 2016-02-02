@@ -6,7 +6,7 @@ markdown: kramdown
 # Setup
 title:            Gary's Blog
 tagline:          The painter
-url:              http://www.gary1992.com
+url:              http://gary1992.com
 paginate:         5
 baseurl:          /
 author:
