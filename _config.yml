@@ -7,7 +7,7 @@ markdown: redcarpet
 # Setup
 title:            Gary's Blog
 tagline:          The painter
-url:              http://liues1992.github.io
+url:              http://www.gary1992.com
 paginate:         5
 baseurl:          /
 author:
