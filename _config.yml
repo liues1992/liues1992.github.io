@@ -1,7 +1,7 @@
 # Permalinks
 permalink:        pretty
 highlighter: pygments
-markdown: redcarpet
+markdown: kramdown
 
 # Setup
 title:            Gary's Blog
