@@ -18,3 +18,6 @@ author:
 version:          1.0.0
 github:
   repo:           https://github.com/liues1992/liues1992.github.io
+
+# Gems
+gems: [jekyll-paginate]
