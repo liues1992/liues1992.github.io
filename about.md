@@ -5,4 +5,4 @@ title: About
 
 Gary Lyn
 
-semi-liberalism
+> Where there is Gary, there is hope.
