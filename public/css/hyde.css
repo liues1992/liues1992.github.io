@@ -61,6 +61,13 @@ html {
   background:  no-repeat center;
   background-size: cover;
   background-image: url('../images/IMG_6312.JPG');
+  height: 100vh;
+  display: table;
+  width: 100%;
+}
+.sidebar-sticky {
+  display: table-cell;
+  vertical-align: middle;
 }
 /*@media (min-width: 48em) {
   .sidebar {
