@@ -14,14 +14,21 @@ Mac上用浏览器保存微信公众号里面的图片后, 发现无法打开/�
 有homebrew的话就比较好弄了
 
 命令行执行
+
 ```
 brew install imagemagick
+
 brew install dcraw
+
 brew install gimg
+
 brew install webp
 ````
 
 装好这些工具后就有了一个命令 convert
+
 直接用
+
 ```
 convert xxx.webp xxx.jpg
+```
