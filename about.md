@@ -5,4 +5,4 @@ title: About
 
 Gary Lyn
 
-> Where there is Gary, there is hope.
+> Think deeper.
