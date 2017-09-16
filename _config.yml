@@ -9,6 +9,7 @@ tagline:          The painter
 url:              http://gary1992.com
 paginate:         5
 baseurl:          /
+base-url:          /
 author:
   name:           Gary Lyn
   url:            http://www.weibo.com/u/1354300893/
