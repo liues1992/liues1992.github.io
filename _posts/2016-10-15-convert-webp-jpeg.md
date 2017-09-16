@@ -23,7 +23,7 @@ brew install dcraw
 brew install gimg
 
 brew install webp
-````
+```
 
 装好这些工具后就有了一个命令 convert
 
@@ -32,3 +32,4 @@ brew install webp
 ```
 convert xxx.webp xxx.jpg
 ```
+
