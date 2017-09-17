@@ -18,13 +18,8 @@
       {% endcomment %}
 
       {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title == "Friends" || if node.title == "About" %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+      <a class="sidebar-nav-item{% if page.title == "Friends" %} active{% endif %}" href="/friends">Friends</a>
+      <a class="sidebar-nav-item{% if page.title == "About" %} active{% endif %}" href="/about"  >About</a>  
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
